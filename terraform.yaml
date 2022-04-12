@@ -1,0 +1,21 @@
+- title: Parametros gerais
+      required:
+        - project_name
+        - description
+      properties:
+        project_name:
+          title: Nome do projeto
+          type: string
+          description: Nome do projeto
+        description:
+          title: Descrição
+          type: string
+          description: Descrição do projeto
+        owner:
+          title: Dono
+          type: string
+          description: Dono do componente
+          ui:field: OwnerPicker
+          ui:options:
+            allowedKinds:
+              - Group
